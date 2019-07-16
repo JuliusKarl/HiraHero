@@ -20,6 +20,7 @@ button {
 }
 button:focus {
     outline: none;
+    background: none;
 }
 
 #answerButton {
