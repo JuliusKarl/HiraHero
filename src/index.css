@@ -9,7 +9,7 @@ h1 {
 }
 
 p {
-    font-size: 25px;
+    font-size: 30px;
     font-family: arial;
 }
 
@@ -20,11 +20,11 @@ button {
 }
 button:focus {
     outline: none;
-    background: none;
 }
 
 #answerButton {
     border: none;
+    background: none;
     color: #bdbdbd;
 }
 #answerButton:hover {
@@ -38,12 +38,12 @@ button:focus {
 }
 
 .activeWindow {
-    height: 100vh;
+    padding-top: 20vh;
+    height: 80vh;
     width: 50vw;
     margin: 0 auto;
     text-align: center;
 }
-
 
 .textWindow {
     height: 50vh;
