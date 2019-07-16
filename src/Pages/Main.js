@@ -17,9 +17,10 @@ class App extends Component {
         console.log(this.state.chars)
     }
     getRandom() {
+        let index = Math.round(Math.random()  * (hiragana.length - 1));
         this.setState({
-            hira: hiragana[Math.round(Math.random()  * (hiragana.length - 1))].char[0],
-            eng: hiragana[Math.round(Math.random()  * (hiragana.length - 1))].char[1],
+            hira: hiragana[index].char[0],
+            eng: hiragana[index].char[1],
             ans: false
         });
     }
@@ -34,10 +35,9 @@ class App extends Component {
             <div className="activeWindow">
                 <div className="textWindow">
                     <h1>{this.state.hira}</h1>
-                    {this.state.ans && <p>{this.state.eng}</p>}
-                </div>
+                    {(this.state.ans ? <p>{this.state.eng}</p> : <button id="answerButton" onClick={this.showAns}><p>Answer</p></button>)}
+                </div><br/>
                 <button onClick={this.getRandom}><p>Next</p></button>
-                <button onClick={this.showAns}><p>Answer</p></button><br/>
             </div>
         </div>
         );

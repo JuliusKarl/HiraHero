@@ -5,10 +5,28 @@
 
 h1 {
     font-size: 150px;
+    color: #9e0000;
 }
 
 p {
     font-size: 35px;
+    font-family: arial;
+}
+
+button {
+    width: 25vw;
+}
+button:focus {
+    outline: none;
+}
+
+#answerButton {
+    border: none;
+    background: none;
+    color: #bdbdbd;
+}
+#answerButton:hover {
+    color: #a3a3a3;
 }
 
 .baseWindow {
@@ -22,7 +40,6 @@ p {
     width: 50vw;
     margin: 0 auto;
     text-align: center;
-    display: grid;
 }
 
 
