@@ -15,9 +15,12 @@ p {
 
 button {
     width: 25vw;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 button:focus {
     outline: none;
+    background: none;
 }
 
 #answerButton {
