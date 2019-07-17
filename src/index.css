@@ -29,6 +29,8 @@ button:focus, button:active {
 /* -----  ID's  ----- */
 #answerButton {
     padding: 0px 5px;
+    color: #d1d1d1;
+    background: none
 }
 #answerButton:hover {
     color: #a3a3a3;
