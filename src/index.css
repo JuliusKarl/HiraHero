@@ -24,16 +24,18 @@ button {
 }
 button:focus, button:active {
     outline: none;
-    background: none;
 }
 
 /* -----  ID's  ----- */
 #answerButton {
-    width: auto;
     padding: 0px 5px;
 }
 #answerButton:hover {
     color: #a3a3a3;
+}
+
+#answerButton:focus, #answerBUtton:active {
+    background: none;
 }
 
 /* -----  Classes  ----- */
@@ -53,5 +55,13 @@ button:focus, button:active {
 
 .textWindow {
     background: #fcfcfc;
+    padding-bottom: 10px;
     box-shadow: 0px 1px 40px #e8e8e8;
+}
+
+/* -----  Media Queries  ----- */
+@media screen and (max-width: 500px) {
+    button {
+        width: auto;
+    }
 }
