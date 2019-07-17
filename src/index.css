@@ -16,22 +16,27 @@ p {
 button {
     width: 25vw;
     -webkit-appearance: none;
-    border-radius: 0;
+    border: none;
+    color: #383838;
+    border-color: #383838;
+    border-radius: 5px;
+    border-width: 1px;
 }
-button:focus {
+button:focus, button:active {
     outline: none;
     background: none;
 }
 
+/* -----  ID's  ----- */
 #answerButton {
-    border: none;
-    background: none;
-    color: #bdbdbd;
+    width: auto;
+    padding: 0px 5px;
 }
 #answerButton:hover {
     color: #a3a3a3;
 }
 
+/* -----  Classes  ----- */
 .baseWindow {
     height: 100vh;
     width: 100vw;
